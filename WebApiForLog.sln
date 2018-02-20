@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiForLog", "WebApiForLog\WebApiForLog.csproj", "{CE5B7EF9-F91B-4A24-9247-1CBBBB93D19C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE5B7EF9-F91B-4A24-9247-1CBBBB93D19C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE5B7EF9-F91B-4A24-9247-1CBBBB93D19C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE5B7EF9-F91B-4A24-9247-1CBBBB93D19C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE5B7EF9-F91B-4A24-9247-1CBBBB93D19C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4554E16-6819-4882-9B77-72773C3F62C8}
+	EndGlobalSection
+EndGlobal
