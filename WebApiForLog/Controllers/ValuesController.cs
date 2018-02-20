@@ -4,11 +4,27 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using EntityLogDataBase;
+using System.Web.Hosting;
+using System.IO;
 
 namespace WebApiForLog.Controllers
 {
     public class ValuesController : ApiController
     {
+        LogDataBase logDataBase;
+        ValuesController()
+        {
+            //string directory = Directory.;
+            string directory = HostingEnvironment.ApplicationPhysicalPath + "StringConnection";
+            string connectionString = "";
+
+            using (var file = File.OpenText(directory))
+            {
+                connectionString = file.ReadLine();
+            }
+            this.logDataBase = new LogDataBase(connectionString);
+        }
         // GET api/values
         public IEnumerable<string> Get()
         {
@@ -22,7 +38,7 @@ namespace WebApiForLog.Controllers
         }
 
         // POST api/values
-        public void Post([FromBody]string value)
+        public void Post([FromBody]Query value)
         {
         }
 
